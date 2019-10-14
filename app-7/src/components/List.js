@@ -3,7 +3,7 @@ import Todo from './Todo'
 
 export default class List extends Component {
     render() {
-        let list = this.props.map((elem, i) => {
+        let list = this.props.task.map((elem, i) => {
             return <Todo key={i} task={elem}/>
         })
 
